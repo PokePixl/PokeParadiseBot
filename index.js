@@ -98,4 +98,4 @@ bot.on('message', (message) => {
 
 bot.on('error', console.error)
 
-bot.login('NTIzOTMzOTAzOTAwMTE0OTU0.Dvgvrg.20RDmdfWhuYrBcnw8kD33fgWG-M')
+bot.login('BOT_TOKEN')
