@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-var fs = require('fs');
 
 bot.on('ready', async () => {
     console.log(`${bot.user.username} is now online!`)
