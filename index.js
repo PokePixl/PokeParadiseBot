@@ -95,6 +95,7 @@ bot.on('message', (message) => {
                     }
                 } else {
                     message.channel.send('There was an error executing this command');
+                }
             } else {
                 message.channel.send('It seems like you don\'t have the permission to use this command. It\'s only for the gym leaders');
             }
