@@ -94,7 +94,7 @@ bot.on('message', (message) => {
                         message.channel.send('You can only award players badges for **your own** gym/gyms');
                     }
                 } else {
-                    message.channel.send('There was an error executing this command');
+                    message.channel.send('No user found');
                 }
             } else {
                 message.channel.send('It seems like you don\'t have the permission to use this command. It\'s only for the gym leaders');
@@ -106,7 +106,11 @@ bot.on('message', (message) => {
                 if(message.member.roles.find(role => role.name === 'Pewter City Gym Leader')) {
                     if(message.channel.name == 'pewter-city-gym') {
                         if(isNaN(args[0]) == false) {
-                            message.channel.bulkDelete(parseInt(args[0]));
+                            if(parseInt(args[0]) <= 100) {
+                                message.channel.bulkDelete(parseInt(args[0]));
+                            } else {
+                                message.channel.send('You can not delete more than 100 messages at once');
+                            }
                         } else {
                             message.channel.send('No number detected. You have to specify number of messages to delete');
                         }
@@ -116,7 +120,11 @@ bot.on('message', (message) => {
                 } else if(message.member.roles.find(role => role.name === 'Cerulean City Gym Leader')) {
                     if(message.channel.name == 'cerulean-city-gym') {
                         if(isNaN(args[0]) == false) {
-                            message.channel.bulkDelete(parseInt(args[0]));
+                            if(parseInt(args[0]) <= 100) {
+                                message.channel.bulkDelete(parseInt(args[0]));
+                            } else {
+                                message.channel.send('You can not delete more than 100 messages at once');
+                            }
                         } else {
                             message.channel.send('No number detected. You have to specify number of messages to delete');
                         }
@@ -126,7 +134,11 @@ bot.on('message', (message) => {
                 } else if(message.member.roles.find(role => role.name === 'Vermilion City Gym Leader')) {
                     if(message.channel.name == 'vermilion-city-gym') {
                         if(isNaN(args[0]) == false) {
-                            message.channel.bulkDelete(parseInt(args[0]));
+                            if(parseInt(args[0]) <= 100) {
+                                message.channel.bulkDelete(parseInt(args[0]));
+                            } else {
+                                message.channel.send('You can not delete more than 100 messages at once');
+                            }
                         } else {
                             message.channel.send('No number detected. You have to specify number of messages to delete');
                         }
@@ -136,7 +148,11 @@ bot.on('message', (message) => {
                 } else if(message.member.roles.find(role => role.name === 'Celadon City Gym Leader')) {
                     if(message.channel.name == 'celadon-city-gym') {
                         if(isNaN(args[0]) == false) {
-                            message.channel.bulkDelete(parseInt(args[0]));
+                            if(parseInt(args[0]) <= 100) {
+                                message.channel.bulkDelete(parseInt(args[0]));
+                            } else {
+                                message.channel.send('You can not delete more than 100 messages at once');
+                            }
                         } else {
                             message.channel.send('No number detected. You have to specify number of messages to delete');
                         }
@@ -146,7 +162,11 @@ bot.on('message', (message) => {
                 } else if(message.member.roles.find(role => role.name === 'Fuchsia City Gym Leader')) {
                     if(message.channel.name == 'fuchsia-city-gym') {
                         if(isNaN(args[0]) == false) {
-                            message.channel.bulkDelete(parseInt(args[0]));
+                            if(parseInt(args[0]) <= 100) {
+                                message.channel.bulkDelete(parseInt(args[0]));
+                            } else {
+                                message.channel.send('You can not delete more than 100 messages at once');
+                            }
                         } else {
                             message.channel.send('No number detected. You have to specify number of messages to delete');
                         }
@@ -156,7 +176,11 @@ bot.on('message', (message) => {
                 } else if(message.member.roles.find(role => role.name === 'Saffron City Gym Leader')) {
                     if(message.channel.name == 'saffron-city-gym') {
                         if(isNaN(args[0]) == false) {
-                            message.channel.bulkDelete(parseInt(args[0]));
+                            if(parseInt(args[0]) <= 100) {
+                                message.channel.bulkDelete(parseInt(args[0]));
+                            } else {
+                                message.channel.send('You can not delete more than 100 messages at once');
+                            }
                         } else {
                             message.channel.send('No number detected. You have to specify number of messages to delete');
                         }
@@ -166,7 +190,11 @@ bot.on('message', (message) => {
                 } else if(message.member.roles.find(role => role.name === 'Cinnabar Island Gym Leader')) {
                     if(message.channel.name == 'cinnabar-island-gym') {
                         if(isNaN(args[0]) == false) {
-                            message.channel.bulkDelete(parseInt(args[0]));
+                            if(parseInt(args[0]) <= 100) {
+                                message.channel.bulkDelete(parseInt(args[0]));
+                            } else {
+                                message.channel.send('You can not delete more than 100 messages at once');
+                            }
                         } else {
                             message.channel.send('No number detected. You have to specify number of messages to delete');
                         }
@@ -176,7 +204,11 @@ bot.on('message', (message) => {
                 } else if(message.member.roles.find(role => role.name === 'Viridian City Gym Leader')) {
                     if(message.channel.name == 'viridian-city-gym') {
                         if(isNaN(args[0]) == false) {
-                            message.channel.bulkDelete(parseInt(args[0]));
+                            if(parseInt(args[0]) <= 100) {
+                                message.channel.bulkDelete(parseInt(args[0]));
+                            } else {
+                                message.channel.send('You can not delete more than 100 messages at once');
+                            }
                         } else {
                             message.channel.send('No number detected. You have to specify number of messages to delete');
                         }
