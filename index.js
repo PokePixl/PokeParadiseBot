@@ -18,7 +18,7 @@ bot.on('message', (message) => {
         if(cmd.toLowerCase() == prefix.toLowerCase() + 'addBadge'.toLowerCase()) {
             if(message.member.roles.find(role => role.name === 'Gym Leaders')) {
                 if(message.mentions.members.first()) {
-                    if(message.member.roles.find(role => role.name === 'Pewter City Gym Leader') && !message.mentions.members.first().roles.find(role => role.name === '🌑')) {
+                    if(message.member.roles.find(role => role.name === 'Pewter Gym') && !message.mentions.members.first().roles.find(role => role.name === '🌑')) {
                         if(message.mentions.members.first() !== null) {
                             let badgeRole1 = message.guild.roles.find(role => role.name.includes('🌑'));
                             let selectedUser = message.mentions.members.first();
@@ -27,7 +27,7 @@ bot.on('message', (message) => {
                         } else {
                             message.channel.send('You have to specify someone by @');
                         }
-                    } else if(message.member.roles.find(role => role.name === 'Cerulean City Gym Leader') && !message.mentions.members.first().roles.find(role => role.name === '💧') && message.mentions.members.first().roles.find(role => role.name === '🌑')) {
+                    } else if(message.member.roles.find(role => role.name === 'Cerulean Gym') && !message.mentions.members.first().roles.find(role => role.name === '💧') && message.mentions.members.first().roles.find(role => role.name === '🌑')) {
                         if(message.mentions.members.first() !== null) {
                             let badgeRole2 = message.guild.roles.find(role => role.name.includes('💧'));
                             let selectedUser = message.mentions.members.first();
@@ -36,7 +36,7 @@ bot.on('message', (message) => {
                         } else {
                             message.channel.send('You have to specify someone by @');
                         }
-                    } else if(message.member.roles.find(role => role.name === 'Vermilion City Gym Leader') && message.mentions.members.first().roles.find(role => role.name === '💧') && !message.mentions.members.first().roles.find(role => role.name === '⚡')) {
+                    } else if(message.member.roles.find(role => role.name === 'Vermilion Gym') && message.mentions.members.first().roles.find(role => role.name === '💧') && !message.mentions.members.first().roles.find(role => role.name === '⚡')) {
                         if(message.mentions.members.first() !== null) {
                             let badgeRole3 = message.guild.roles.find(role => role.name.includes('⚡'));
                             let selectedUser = message.mentions.members.first();
@@ -45,7 +45,7 @@ bot.on('message', (message) => {
                         } else {
                             message.channel.send('You have to specify someone by @');
                         }
-                    } else if(message.member.roles.find(role => role.name === 'Celadon City Gym Leader') && message.mentions.members.first().roles.find(role => role.name === '⚡') && !message.mentions.members.first().roles.find(role => role.name === '🌈')) {
+                    } else if(message.member.roles.find(role => role.name === 'Celadon Gym') && message.mentions.members.first().roles.find(role => role.name === '⚡') && !message.mentions.members.first().roles.find(role => role.name === '🌈')) {
                         if(message.mentions.members.first() !== null) {
                             let badgeRole4 = message.guild.roles.find(role => role.name.includes('🌈'));
                             let selectedUser = message.mentions.members.first();
@@ -54,7 +54,7 @@ bot.on('message', (message) => {
                         } else {
                             message.channel.send('You have to specify someone by @');
                         }
-                    } else if(message.member.roles.find(role => role.name === 'Fuchsia City Gym Leader') && message.mentions.members.first().roles.find(role => role.name === '🌈') && !message.mentions.members.first().roles.find(role => role.name === '🔮')) {
+                    } else if(message.member.roles.find(role => role.name === 'Fuchsia Gym') && message.mentions.members.first().roles.find(role => role.name === '🌈') && !message.mentions.members.first().roles.find(role => role.name === '🔮')) {
                         if(message.mentions.members.first() !== null) {
                             let badgeRole5 = message.guild.roles.find(role => role.name.includes('🔮'));
                             let selectedUser = message.mentions.members.first();
@@ -63,7 +63,7 @@ bot.on('message', (message) => {
                         } else {
                             message.channel.send('You have to specify someone by @');
                         }
-                    } else if(message.member.roles.find(role => role.name === 'Saffron City Gym Leader') && message.mentions.members.first().roles.find(role => role.name === '🔮') && !message.mentions.members.first().roles.find(role => role.name === '📀')) {
+                    } else if(message.member.roles.find(role => role.name === 'Saffron Gym') && message.mentions.members.first().roles.find(role => role.name === '🔮') && !message.mentions.members.first().roles.find(role => role.name === '📀')) {
                         if(message.mentions.members.first() !== null) {
                             let badgeRole6 = message.guild.roles.find(role => role.name.includes('📀'));
                             let selectedUser = message.mentions.members.first();
@@ -72,7 +72,7 @@ bot.on('message', (message) => {
                         } else {
                             message.channel.send('You have to specify someone by @');
                         }
-                    } else if(message.member.roles.find(role => role.name === 'Cinnabar Island Gym Leader') && message.mentions.members.first().roles.find(role => role.name === '📀') && !message.mentions.members.first().roles.find(role => role.name === '🌋')) {
+                    } else if(message.member.roles.find(role => role.name === 'Cinnabar Gym') && message.mentions.members.first().roles.find(role => role.name === '📀') && !message.mentions.members.first().roles.find(role => role.name === '🌋')) {
                         if(message.mentions.members.first() !== null) {
                             let badgeRole7 = message.guild.roles.find(role => role.name.includes('🌋'));
                             let selectedUser = message.mentions.members.first();
@@ -81,7 +81,7 @@ bot.on('message', (message) => {
                         } else {
                             message.channel.send('You have to specify someone by @');
                         }
-                    } else if(message.member.roles.find(role => role.name === 'Viridian City Gym Leader') && message.mentions.members.first().roles.find(role => role.name === '🌋') && !message.mentions.members.first().roles.find(role => role.name === '🌍')) {
+                    } else if(message.member.roles.find(role => role.name === 'Viridian Gym') && message.mentions.members.first().roles.find(role => role.name === '🌋') && !message.mentions.members.first().roles.find(role => role.name === '🌍')) {
                         if(message.mentions.members.first() !== null) {
                             let badgeRole8 = message.guild.roles.find(role => role.name.includes('🌍'));
                             let selectedUser = message.mentions.members.first();
@@ -103,7 +103,7 @@ bot.on('message', (message) => {
 
         if(cmd.toLowerCase() == prefix.toLowerCase() + 'prune'.toLowerCase()) {
             if(message.member.roles.find(role => role.name === 'Gym Leaders')) {
-                if(message.member.roles.find(role => role.name === 'Pewter City Gym Leader')) {
+                if(message.member.roles.find(role => role.name === 'Pewter Gym')) {
                     if(message.channel.name == 'pewter-city-gym') {
                         if(isNaN(args[0]) == false) {
                             if(parseInt(args[0]) <= 100) {
@@ -117,7 +117,7 @@ bot.on('message', (message) => {
                     } else {
                         message.channel.send('You can only prune messages in your own gym');
                     }
-                } else if(message.member.roles.find(role => role.name === 'Cerulean City Gym Leader')) {
+                } else if(message.member.roles.find(role => role.name === 'Cerulean Gym')) {
                     if(message.channel.name == 'cerulean-city-gym') {
                         if(isNaN(args[0]) == false) {
                             if(parseInt(args[0]) <= 100) {
@@ -131,7 +131,7 @@ bot.on('message', (message) => {
                     } else {
                         message.channel.send('You can only prune messages in your own gym');
                     }
-                } else if(message.member.roles.find(role => role.name === 'Vermilion City Gym Leader')) {
+                } else if(message.member.roles.find(role => role.name === 'Vermilion Gym')) {
                     if(message.channel.name == 'vermilion-city-gym') {
                         if(isNaN(args[0]) == false) {
                             if(parseInt(args[0]) <= 100) {
@@ -145,7 +145,7 @@ bot.on('message', (message) => {
                     } else {
                         message.channel.send('You can only prune messages in your own gym');
                     }
-                } else if(message.member.roles.find(role => role.name === 'Celadon City Gym Leader')) {
+                } else if(message.member.roles.find(role => role.name === 'Celadon Gym')) {
                     if(message.channel.name == 'celadon-city-gym') {
                         if(isNaN(args[0]) == false) {
                             if(parseInt(args[0]) <= 100) {
@@ -159,7 +159,7 @@ bot.on('message', (message) => {
                     } else {
                         message.channel.send('You can only prune messages in your own gym');
                     }
-                } else if(message.member.roles.find(role => role.name === 'Fuchsia City Gym Leader')) {
+                } else if(message.member.roles.find(role => role.name === 'Fuchsia Gym')) {
                     if(message.channel.name == 'fuchsia-city-gym') {
                         if(isNaN(args[0]) == false) {
                             if(parseInt(args[0]) <= 100) {
@@ -173,7 +173,7 @@ bot.on('message', (message) => {
                     } else {
                         message.channel.send('You can only prune messages in your own gym');
                     }
-                } else if(message.member.roles.find(role => role.name === 'Saffron City Gym Leader')) {
+                } else if(message.member.roles.find(role => role.name === 'Saffron Gym')) {
                     if(message.channel.name == 'saffron-city-gym') {
                         if(isNaN(args[0]) == false) {
                             if(parseInt(args[0]) <= 100) {
@@ -187,7 +187,7 @@ bot.on('message', (message) => {
                     } else {
                         message.channel.send('You can only prune messages in your own gym');
                     }
-                } else if(message.member.roles.find(role => role.name === 'Cinnabar Island Gym Leader')) {
+                } else if(message.member.roles.find(role => role.name === 'Cinnabar Gym')) {
                     if(message.channel.name == 'cinnabar-island-gym') {
                         if(isNaN(args[0]) == false) {
                             if(parseInt(args[0]) <= 100) {
@@ -201,7 +201,7 @@ bot.on('message', (message) => {
                     } else {
                         message.channel.send('You can only prune messages in your own gym');
                     }
-                } else if(message.member.roles.find(role => role.name === 'Viridian City Gym Leader')) {
+                } else if(message.member.roles.find(role => role.name === 'Viridian Gym')) {
                     if(message.channel.name == 'viridian-city-gym') {
                         if(isNaN(args[0]) == false) {
                             if(parseInt(args[0]) <= 100) {
